@@ -1,9 +1,11 @@
+import { Route, Switch } from "react-router-dom";
+
+import "./App.css";
+
 import Home from "./components/Home";
 import Order from "./components/Order";
 import Success from "./components/Success";
-import "./App.css";
 
-import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
