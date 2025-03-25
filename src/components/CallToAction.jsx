@@ -18,7 +18,8 @@ export default function CallToAction() {
       </p>
       <Link
         to="/order"
-        className=" bg-[#FDC913] hover:bg-amber-500 text-black text-xl  font-medium py-3 px-15 my-15 rounded-3xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        className=" bg-[#FDC913] hover:bg-amber-500 text-black text-xl font-medium py-3 px-15 my-15 rounded-3xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        data-cy="cta-button"
       >
         ACIKTIM
       </Link>
