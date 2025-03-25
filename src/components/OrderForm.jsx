@@ -31,10 +31,10 @@ export default function OrderForm(props) {
     ...selectedPizza,
     size: "Orta",
     dough: "İnce Hamur",
+    buyerName: "",
     note: "",
     quantity: 1,
     price: selectedPizza.price + selectedPizza.extras.length * extraCost,
-    buyerName: "",
   });
 
   const isFormValid =
@@ -81,10 +81,10 @@ export default function OrderForm(props) {
       size: order.size,
       dough: order.dough,
       extras: order.extras,
+      buyerName: order.buyerName,
       note: order.note,
       quantity: order.quantity,
       price: order.price,
-      buyerName: order.buyerName,
     };
 
     axios

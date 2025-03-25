@@ -7,10 +7,10 @@ export default function Success() {
       <Link to="/">
         <img src={logo} alt="logo" className="py-5" />
       </Link>
-      <p className="font-[Barlow] font-light text-7xl text-white text-center flex flex-col flex-1 justify-center gap-8">
+      <div className="font-[Barlow] font-light text-7xl text-white text-center flex flex-col flex-1 justify-center gap-8">
         <p>TEBRİKLER!</p>
         <p>SİPARİŞİNİZ ALINDI!</p>
-      </p>
+      </div>
     </div>
   );
 }
