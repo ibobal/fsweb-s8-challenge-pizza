@@ -4,21 +4,21 @@ describe("Order Form", () => {
     cy.get('[data-cy="cta-button"]').click();
   });
 
-  it("inputa bir metin giren test", () => {
+  it("name input testi", () => {
     cy.get('input[name="buyerName"]')
       .should("exist")
       .type("John Doe")
       .should("have.value", "John Doe");
   });
 
-  it("birden fazla malzeme seçilebilen bir test", () => {
+  it("birden fazla malzeme seçim testi", () => {
     const ingredients = ["Pepperoni", "Mozarella", "Domates", "Biber", "Mantar", "Soğan"];
     ingredients.forEach((ingredient) => {
       cy.get(`#${ingredient}`).check().should("be.checked");
     });
   });
 
-  it("formu gönderen bir test", () => {
+  it("form gönderme testi", () => {
 
     cy.get('input[name="buyerName"]').type("Jane Doe");
     const ingredients = ["Pepperoni", "Mozarella", "Domates", "Biber"];
