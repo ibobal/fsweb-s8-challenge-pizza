@@ -53,7 +53,6 @@ export default function OrderForm(props) {
         ? [...order.extras, value]
         : order.extras.filter((item) => item !== value);
     } else if (name === "quantity") {
-      console.log(event);
       if (dataset.action === "increment") {
         newOrder.quantity = order.quantity + 1;
       } else if (dataset.action === "decrement") {
