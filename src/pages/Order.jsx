@@ -10,7 +10,7 @@ const selectedPizza = pizzaDb[0];
 
 export default function PizzaOrderPage() {
   return (
-    <div className="w-screen bg-gray-50 font-[Barlow]">
+    <div className="w-full bg-gray-50 font-[Barlow]">
       <ToastContainer />
 
       <header className="bg-[#CE2829] text-white py-5 flex flex-col place-items-center">
