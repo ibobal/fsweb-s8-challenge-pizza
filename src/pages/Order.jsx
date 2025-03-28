@@ -1,14 +1,21 @@
 import logo from "/images/iteration-1-images/logo.svg";
-import { pizzaDb } from "../../pizzaDb";
+import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 import OrderForm from "../components/OrderForm";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-const selectedPizza = pizzaDb[0];
 
 export default function PizzaOrderPage() {
+  const location = useLocation();
+  const selectedPizza = location.state?.pizza;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full bg-gray-50 font-[Barlow]">
       <ToastContainer />
