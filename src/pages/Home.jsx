@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import { pizzaDb } from "../../pizzaDb";
 import CtaCards from "../components/CtaCards";
 import FoodCard from "../components/FoodCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -22,15 +23,16 @@ export default function Home() {
           Acıktıran Kodlara Doyuran Lezzetler
         </h3>
         <NavBar />
-        <div className="flex overflow-x-auto justify-start lg:justify-center mt-10 mb-30 gap-5">
+        <div
+          id="food-slider"
+          className="flex overflow-x-auto justify-start lg:justify-center mb-30 gap-5 p-5"
+        >
           {pizzaDb.map((pizza) => (
-            <FoodCard pizza={pizza} />
+            <FoodCard pizza={pizza} key={pizza.name} />
           ))}
         </div>
       </main>
-      <footer>
-
-      </footer>
+      <Footer />
     </div>
   );
 }
