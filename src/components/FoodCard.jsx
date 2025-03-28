@@ -6,7 +6,7 @@ export default function FoodCard(props) {
     <Link 
       to={{
         pathname: "/order",
-        state: { pizza }  // Pass the selected pizza here
+        state: { pizza }
       }}
     >
     <div
