@@ -10,8 +10,8 @@ export default function CallToAction() {
         KOD ACIKTIRIR<br></br>PİZZA, DOYURUR
       </p>
       <Link
-        to="/order"
-        className="bg-[#FDC913] hover:text-[#CE2829] hover:bg-[#292929] text-black text-xl font-medium py-3 px-15 my-15 rounded-3xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        to="#food-slider"
+        className="bg-[#FDC913] hover:text-[#CE2829] hover:font-bold hover:bg-[#292929] text-black text-xl font-medium py-3 px-15 my-15 rounded-3xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
         data-cy="cta-button"
       >
         ACIKTIM
