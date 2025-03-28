@@ -15,7 +15,7 @@ export default function Footer() {
     <footer>
       <div className="flex flex-col lg:flex-row bg-[#292929] text-white font-[Barlow] justify-around pt-10">
         <div className="flex flex-col lg:flex-row gap-10 px-5 lg:px-0">
-          <div className="flex flex-col flex-shrink-0 justify-around gap-7 text-lg">
+          <div className="flex flex-col flex-shrink-0 items-center lg:items-start gap-7 text-lg">
             <img
               src="/images/iteration-2-images/footer/logo-footer.svg"
               alt="logo-footer"
