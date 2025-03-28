@@ -20,7 +20,7 @@ export default function CtaCards() {
         </div>
         <div className="p-15 bg-cover bg-center shadow-lg rounded-lg bg-[url(/images/iteration-2-images/cta/kart-3.png)]">
           <h3 className="mb-10 text-4xl font-semibold">
-            <span className="text-[#CE2829]">Çoooook</span> hızlı npm<br></br>gibi kurye
+            <span className="text-[#CE2829]">Çoooook</span> hızlı<br></br>npm gibi kurye
           </h3>
           <OrderButton />
         </div>
