@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
 export default function FoodCard(props) {
   const { pizza } = props;
   return (
+    <Link 
+      to={{
+        pathname: "/order",
+        state: { pizza }  // Pass the selected pizza here
+      }}
+    >
     <div
       key={pizza.id}
       className="bg-white shadow-md rounded-xl p-5 w-80 flex-shrink-0 font-[Barlow]"
@@ -17,5 +25,6 @@ export default function FoodCard(props) {
         <span className="text-[#292929] font-bold text-lg">{pizza.price} ₺</span>
       </div>
     </div>
+    </Link>
   );
 }
